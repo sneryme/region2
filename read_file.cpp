@@ -23,6 +23,7 @@ int read_file::Read_file() {
                 stringstream inputt(str);
                 string mas[7];
                 int i = 0;
+
                 while (getline(inputt, mas[i], ','))
                     i++;
                 lists->append({stoi(mas[0]),QString::fromStdString(mas[1]),stod(mas[2]),stod(mas[3]),stod(mas[4]),stod(mas[5]),stod(mas[6])});
@@ -33,9 +34,9 @@ int read_file::Read_file() {
 
         //    sort();
         }else
-          exit(0);
+          return -1;
     file.close();
-    cout << QString::fromQString(lists[1].begin());
+
     return 0;
 }
 /*
