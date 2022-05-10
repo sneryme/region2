@@ -24,10 +24,12 @@ public:
 
 private slots:
     void on_create_table_clicked();
+    void on_btn_check_stolb_clicked();
 
 private:
     QList<Region>* list;
     read_file* rfile;
+    Sort* ssort;
     Model *model;
     Ui::MainWindow *ui;
 };
