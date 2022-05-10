@@ -86,15 +86,15 @@ QVariant Model::headerData(int section, Qt::Orientation orientation, int role) c
         case 1:
             return QString("Region");
         case 2:
-            return QString("Year");
+            return QString("NPG");
         case 3:
-            return QString("Year");
+            return QString("Birth rate");
         case 4:
-            return QString("Year");
+            return QString("Death rate");
         case 5:
-            return QString("Year");
+            return QString("GDW");
         case 6:
-            return QString("Year");
+            return QString("Urbanization");
         }
     }
     return QVariant();
