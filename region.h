@@ -31,7 +31,6 @@ private:
     double _death_rate;
     double _gdw;
     double _urbanization;
-
 };
 
 
