@@ -2,16 +2,20 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     list = new QList<Region>;
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
 {
+    delete model;
+    delete list;
     delete ui;
 }
 
