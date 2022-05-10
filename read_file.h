@@ -13,12 +13,13 @@ using namespace std;
 class read_file
 {
 public:
-    read_file(string file_path, QList<Region>* list);
+    read_file(string file_path, string region, QList<Region>* list);
     ~read_file();
     int Read_file();
 private:
     QList<Region>* lists;
     string file_path;
+    string region;
     //void sort();
    // double* mediana_min_max(vector <double> vector_sort);
 };
