@@ -1,15 +1,14 @@
 #include "read_file.h"
 
-
-read_file::read_file(string file_path, QList<Region>* list)
+read_file::read_file(string file_path, string region, QList<Region>* list)
 {
     this->lists = list;
     this-> file_path = file_path;
-
+    this-> region = region;
 }
 
 read_file::~read_file(){
-
+    delete lists;
 }
 
 int read_file::Read_file() {
