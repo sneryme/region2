@@ -83,3 +83,18 @@ double Region::geturbanization() const
 {
     return _urbanization;
 }
+
+double Region::getString(QString stolb) const{
+    if(stolb.toLower()=="npg")
+        return this->getNpg();
+    else if(stolb.toLower()=="birth rate")
+        return this-> getbirth_rate();
+    else if(stolb.toLower()=="death rate")
+        return this->getdeath_rate();
+    else if(stolb.toLower()=="gdw")
+        return this->getGdw();
+    else if(stolb.toLower()=="urbanization")
+        return this->geturbanization();
+    else
+        return -1;
+}

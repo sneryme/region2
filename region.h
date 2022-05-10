@@ -2,6 +2,7 @@
 #define REGION_H
 #include <QString>
 
+
 class Region
 {
 public:
@@ -21,6 +22,7 @@ public:
     double getGdw() const;
     void seturbanization(const double &value );
     double geturbanization() const;
+    double getString(QString stolb) const;
 private:
     int _year;
     QString _region;
