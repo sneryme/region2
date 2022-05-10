@@ -7,6 +7,7 @@
 #include <QString>
 #include <QMessageBox>
 #include <QMainWindow>
+#include "sort.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
